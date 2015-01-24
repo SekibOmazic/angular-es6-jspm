@@ -1,0 +1,42 @@
+/* Todo Animations on testing page
+-------------------------------------------------- */
+
+.todo-item {
+  -webkit-transition: color 0.6s, background-color 0.3s;
+  -moz-transition: color 0.6s, background-color 0.3s;
+  -ms-transition: color 0.6s, background-color 0.3s;
+  transition: color 0.6s, background-color 0.3s;
+}
+.todo-item label {
+  display: block;
+}
+.todo-item.ng-enter {
+  -webkit-animation: fadeInLeft 1s;
+  -moz-animation: fadeInLeft 1s;
+  -ms-animation: fadeInLeft 1s;
+  animation: fadeInLeft 1s;
+}
+.todo-item.ng-leave {
+  -webkit-animation: bounceOut 1s;
+  -moz-animation: bounceOut 1s;
+  -ms-animation: bounceOut 1s;
+  animation: bounceOut 1s;
+}
+.todo-complete {
+  background: #f3f3f3;
+  color: #777;
+}
+.todo-complete label {
+  text-decoration: line-through;
+}
+
+/* growl fix
+-------------------------------------------------- */
+.growl {
+  position: fixed;
+  top: 60px;
+  right: 10px;
+  float: right;
+  width: 250px;
+  z-index:10;
+}

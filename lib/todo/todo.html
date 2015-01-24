@@ -1,0 +1,24 @@
+<div growl></div>
+<div>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">TodoMVC with ES6 and Animate.css</h3>
+        </div>
+        <div class="panel-body">
+            <form ng-submit="tc.addTodo()">
+                <input type="text" ng-model="tc.newTodo" class="form-control" placeholder="New todo item goes here, then press Enter" focus>
+            </form>
+            <br>
+            <div class="list-group">
+                <div class="list-group-item todo-item" ng-repeat="item in tc.items" ng-class="{'todo-complete': item.completed}">
+                    <span class="close" ng-click="tc.removeTodo(item)">&times;</span>
+                    <label>
+                        <input type="checkbox" ng-model="item.completed">
+                        <span ng-bind="item.text">This is the content of the Todo</span>
+                    </label>
+                </div>
+            </div>
+            <button class="btn btn-block btn-danger" ng-click="tc.clearAll()">Clear All Items</button>
+        </div>
+    </div>
+</div>

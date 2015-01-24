@@ -1,0 +1,29 @@
+<!--
+<div class="col-sm-4 col-sm-offset-3">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">Github Comitters</h3>
+        </div>
+        <div class="panel-body">
+            <form novalidate >
+                <input type="text" ng-model="ghc.newOwner" class="form-control" placeholder="Owner" focus>
+                <input type="text" ng-model="ghc.newRepo"  class="form-control" placeholder="Repo">
+            </form>
+            <br>
+
+            <div class="list-group">
+                <div class="list-group-item" ng-repeat="committer in ghc.committers">
+                    <label>
+                        <img ng-src="{{committer.avatar_url}}" width="20" height="20" alt="{{committer.login}}">
+                        <span >{{committer.login}}</span>
+                    </label>
+                </div>
+            </div>
+
+            <button class="btn btn-block btn-danger" ng-click="ghc.getCommitters(ghc.newOwner, ghc.newRepo)">Get Comitters</button>
+        </div>
+    </div>
+</div>
+-->
+
+<github-contributors></github-contributors>

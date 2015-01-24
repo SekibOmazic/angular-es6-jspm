@@ -1,0 +1,26 @@
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">Github Contributors</h3>
+    </div>
+    <div class="panel-body">
+        <form novalidate>
+            <div class="form-group">
+                <input type="text" ng-model="ghc.newOwner" class="form-control" placeholder="Owner" focus>    
+            </div>
+            <div class="form-group">
+                <input type="text" ng-model="ghc.newRepo"  class="form-control" placeholder="Repo">    
+            </div>
+            <button class="btn btn-danger" ng-click="ghc.getContributors(ghc.newOwner, ghc.newRepo)">Get Contributors</button>
+        </form>
+        
+        <div class="list-group">
+            <div class="list-group-item" ng-repeat="contributor in ghc.contributors">
+                <label>
+                    <img ng-src="{{contributor.avatar_url}}" width="20" height="20" alt="{{contributor.login}}">
+                    <span >{{contributor.login}}</span>
+                </label>
+            </div>
+        </div>
+        
+    </div>
+</div>

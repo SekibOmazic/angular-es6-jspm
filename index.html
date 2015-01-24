@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Angular-ES6-jspm</title>
+
+    <!-- include following two files if you want to build the application with jspm bundle-sfx -->
+<!--
+    <link rel="stylesheet" href="jspm_packages/github/twbs/bootstrap@3.3.2/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="lib/todo/todo.css"/>
+-->
+</head>
+
+<body>
+
+    <div class="navbar navbar-inverse navbar-static-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#/">ES6 AngularJS</a>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li ng-class="active">
+                        <a href="#/">Todo</a>
+                    </li>
+                    <li>
+                        <a href="#/github">Github</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <section class="container slim" >
+        <h1 id="message"></h1>
+        <div id="content" ng-view=""></div>
+        <footer class="footer clearfix">
+            <hr />
+            <p>Copywrite 2015 ©</p>
+        </footer>
+    </section>
+
+    <!-- Use this for development -->
+
+    <script src="jspm_packages/system.js"></script>
+    <script src="config.js"></script>
+    <script>
+        System.import('lib/app').catch(console.error.bind(console));
+    </script>
+
+
+    <!-- Use this for production -->
+<!--
+    <script src="jspm_packages/traceur-runtime.js"></script>
+    <script src="build.js"></script>
+-->
+
+</body>
+
+</html>
