@@ -9,7 +9,7 @@ Sample application showing how to use AngularJS with ES6. Built with awesome [JS
 3. `npm install -g jspm`
 4. `jspm init` and just take default options
 5. `jspm install angular@1.3.8 angular-route@1.3.8 angular-animate@1.3.8`
-6. `jspm install github:marcorinck/angular-growl@0.4.0 -o "{ main: 'build/angular-growl.min.js', dependencies: { 'angular': '1.3.8'} }"`
+6. `jspm install github:marcorinck/angular-growl -o "{ main: 'build/angular-growl.min.js', dependencies: { 'angular': '1.3.8'} }"`
 7. `jspm install bootstrap css@0.1.0`
 
 
