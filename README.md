@@ -28,6 +28,5 @@ For running in production mode:
 
 ## Issues
 
-1. It is not yet possible to use a provider (e.g. GitHubProvider) when bundling the application with `--minify` flag. Injection doesn't work in this case.
-2. Due to following [issue](https://github.com/systemjs/builder/issues/12) it is not possible to dynamically import css files with `bundle-sfx` option. Workaround is to include css files in index.html directly
+1. Due to following [issue](https://github.com/systemjs/builder/issues/12) it is not possible to dynamically import css files with `bundle-sfx` option. Workaround is to include css files in index.html directly
 
